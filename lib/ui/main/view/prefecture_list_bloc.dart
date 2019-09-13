@@ -1,6 +1,9 @@
 import 'dart:async';
 
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:prefecture_name_app/service_locator.dart';
+import 'package:prefecture_name_app/ui/detail/detail_page.dart';
 
 class PrefectureListBloc {
   final _streamController = StreamController<List<String>>();

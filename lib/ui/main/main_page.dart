@@ -13,7 +13,7 @@ class MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('テスト'),
+        title: Text('都道府県一覧'),
       ),
       body: Provider<PrefectureListBloc>(
         builder: (context) => PrefectureListBloc(),

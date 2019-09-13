@@ -1,3 +1,4 @@
+import 'package:prefecture_name_app/model/city.dart';
 import 'package:prefecture_name_app/repository/repository.dart';
 
 class RepositoryMockImpl extends Repository {
@@ -56,4 +57,23 @@ class RepositoryMockImpl extends Repository {
     );
   }
 
+  @override
+  Future<List<City>> getCityNames(String prefectureName) {
+    return Future.value(
+        [
+            City(
+                name: 'TEST_市',
+                kana: 'てすとし',
+            ),
+            City(
+                name: 'TEST_町',
+                kana: 'てすとちょう',
+            ),
+            City(
+                name: 'TEST_村',
+                kana: 'てすとむら',
+            ),
+        ]
+    );
+  }
 }

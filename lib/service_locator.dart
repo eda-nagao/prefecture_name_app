@@ -11,7 +11,7 @@ class ServiceLocator {
   }
 
   ServiceLocator._internal() {
-    _api = ApiModelImpl('http://geoapi.heartrails.com');
+    _api = ApiModelImpl('geoapi.heartrails.com');
     _repository = RepositoryImpl(_api);
   }
 
